@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services - HealthSpecialist</title>
+  <meta name="description" content="Послуги нашої сучасної медичної клініки: сімейна медицина, терапія, кардіологія та фізіотерапія.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="frame">
+    <header class="header">
+      <div class="header-inner">
+        <a class="logo" href="index.html#home" aria-label="HealthSpecialist — на головну">
+          <span class="logo-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span class="logo-text">Health<em>Specialist</em></span>
+        </a>
+        <nav class="nav" aria-label="Основне меню">
+          <a href="index.html#home">HOME</a>
+          <a href="index.html#about">ABOUT</a> <a href="services.html" class="active">SERVICES</a>
+          <div class="has-dropdown">
+            <a href="index.html#doctors" aria-haspopup="true" aria-expanded="false">DOCTORS</a>
+            <ul class="dropdown" role="menu" aria-label="Doctors list" hidden>
+              <li><a href="index.html#doctor-1" role="menuitem">Phillis K Vance MD</a></li>
+              <li><a href="index.html#doctor-2" role="menuitem">Stanley K Hudson MD</a></li>
+              <li><a href="index.html#doctor-3" role="menuitem">Kevin D Malone MD</a></li>
+              <li><a href="index.html#doctor-4" role="menuitem">Angela S Martin MD</a></li>
+            </ul>
+          </div>
+          <a href="index.html#contact">CONTACT</a>
+        </nav>
+        <div class="auth">
+          <a class="login" href="#login">LOG IN</a>
+          <button class="btn btn-light" type="button">SIGN UP</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="services-section" id="services" aria-label="Our Services">
+        <h2>Our Services</h2>
+        <div class="info-cards">
+          
+          <article class="info-card">
+            <img src="images/FAMILY MEDICINE.jpg" alt="FAMILY MEDICINE" class="service-icon">
+            
+            <div class="info-card-content"> 
+              <h3>FAMILY MEDICINE</h3>
+              <p>
+                Comprehensive medical care for the whole family, from newborns to seniors. We provide preventive check-ups, vaccinations, routine screenings, and manage acute illnesses. Our team focuses on building long-term relationships to manage chronic diseases like diabetes and hypertension effectively.
+              </p>
+              <button class="btn btn-primary">LEARN MORE</button>
+            </div>
+            
+          </article>
+          
+          <article class="info-card">
+            <img src="images/INTERNAL MEDICINE.jpg" alt="INTERNAL MEDICINE" class="service-icon">
+            
+            <div class="info-card-content">
+              <h3>INTERNAL MEDICINE</h3>
+              <p>
+                In-depth diagnosis and treatment of complex internal organ diseases in adults. Our internists (therapists) specialize in managing multiple chronic conditions simultaneously. We use advanced diagnostic methods to establish accurate diagnoses and develop comprehensive treatment plans for complex adult health issues.
+              </p>
+              <button class="btn btn-primary">LEARN MORE</button>
+            </div>
+
+          </article>
+          
+          <article class="info-card">
+            <img src="images/CARDIOLOGY.jpg" alt="CARDIOLOGY" class="service-icon">
+            
+            <div class="info-card-content">
+              <h3>CARDIOLOGY</h3>
+              <p>
+                Specialized care for your heart. Diagnosis, treatment, and prevention of cardiovascular diseases. Our services include ECG, stress tests, Holter monitoring, and heart ultrasounds (Echocardiography). We also provide expert lifestyle counseling and management for hypertension and high cholesterol.
+              </p>
+              <button class="btn btn-primary">LEARN MORE</button>
+            </div>
+
+          </article>
+          
+          <article class="info-card">
+            <img src="images/PHYSICAL THERAPY.jpg" alt="PHYSICAL THERAPY" class="service-icon">
+            
+            <div class="info-card-content">
+              <h3>PHYSICAL THERAPY</h3>
+              <p>
+                Recovery after injuries, surgeries, or neurological events like strokes. We create individual rehabilitation programs including therapeutic exercises, manual therapy, and massage. Our goal is to restore mobility, reduce pain, and help you return to an active, independent life through personalized care.
+              </p>
+              <button class="btn btn-primary">LEARN MORE</button>
+            </div>
+
+          </article>
+
+        </div>
+      </section>
+    </main>
+    
+    <section class="faq-section" aria-label="Frequently Asked Questions about Services">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq1-answer-en">
+            <span>What is the difference between Family and Internal Medicine?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div id="faq1-answer-en" class="faq-answer" hidden>
+            <p>
+              Family Medicine provides care for patients of all ages, from infants to the elderly. Internal Medicine (internists) focuses exclusively on adults (18+) and often specializes in diagnosing and managing complex medical conditions and chronic diseases in adult patients.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq2-answer-en">
+            <span>Do I need a referral to see a cardiologist?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div id="faq2-answer-en" class="faq-answer" hidden>
+            <p>
+              While many insurance plans require a referral from your primary care physician to see a specialist like a cardiologist, we also accept self-referrals. We recommend calling our office first to verify your insurance coverage and schedule a consultation.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq3-answer-en">
+            <span>What does a Physical Therapy session involve?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div id="faq3-answer-en" class="faq-answer" hidden>
+            <p>
+              Your first session involves a comprehensive assessment of your condition, pain level, and mobility. Based on this, your therapist will create a personalized treatment plan. Subsequent sessions typically include a combination of guided therapeutic exercises, manual (hands-on) therapy, and education on exercises you can do at home.
+            </T>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <footer class="site-footer" aria-label="Footer" id="contact">
+      <div class="site-footer__inner">
+        <a class="logo footer-logo" href="index.html#home" aria-label="HealthSpecialist — to top">
+          <span class="logo-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span class="logo-text">Health<em>Specialist</em></span>
+        </a>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>SERVICES</h4>
+            <a href="services.html">Family Medicine</a>
+            <a href="services.html">Internal Medicine</a>
+            <a href="services.html">Cardiology</a>
+            <a href="services.html">Physical Therapy</a>
+          </div>
+          <div class="footer-col">
+            <h4>DOCTORS</h4>
+            <a href="index.html#doctor-1">Phillis K Vance MD</a>
+            <a href="index.html#doctor-2">Stanley K Hudson MD</a>
+            <a href="index.html#doctor-3">Kevin D Malone MD</a>
+            <a href="index.html#doctor-4">Angela S Martin MD</a>
+          </div>
+          <div class="footer-col contact-col">
+            <h4>CONTACT</h4>
+            <a href="tel:+14041234567" class="phone-cta">
+              <span class="phone-cta__icon" aria-hidden="true">
+                <img src="images/mobile.png" alt="" width="20" height="20">
+              </span>
+              (404)123 - 4567
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script>
+    document.querySelectorAll('.has-dropdown').forEach(w => {
+      const link = w.querySelector('a');
+      const menu = w.querySelector('.dropdown');
+      if (!link || !menu) return;
+      link.addEventListener('click', (e) => {
+        if (link.getAttribute('href') === 'index.html#doctors') {
+        }
+        e.preventDefault(); 
+        const willOpen = menu.hidden !== false;
+        document.querySelectorAll('.has-dropdown .dropdown').forEach(m => m.hidden = true);
+        menu.hidden = !willOpen ? true : false;
+      });
+      document.addEventListener('click', (e) => {
+        if (!w.contains(e.target)) menu.hidden = true;
+      });
+    });
+  
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = document.getElementById(button.getAttribute('aria-controls'));
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        
+        button.setAttribute('aria-expanded', !isExpanded);
+        
+        if (isExpanded) {
+          answer.hidden = true;
+        } else {
+          answer.hidden = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
