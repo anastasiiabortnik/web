@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services - HealthSpecialist</title>
+  <meta name="description" content="Послуги нашої сучасної медичної клініки: сімейна медицина, терапія, кардіологія та фізіотерапія.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-text': '#3B4053',
+            'primary-blue': '#4593FF',
+            'primary-blue-hover': '#2f7ae7', 
+            'light-bg': '#F8FBFF',
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+          },
+          maxWidth: {
+            'frame': '1360px', 
+          },
+          boxShadow: {
+            'custom': '0 10px 30px rgba(19, 33, 68, .08)',
+            'custom-hover': '0 10px 30px rgba(69, 147, 255, 0.2)',
+            'logo': '0 2px 6px rgba(0, 0, 0, .12)',
+          },
+          spacing: {
+            '70': '4.375rem', 
+          },
+          
+          variants: {
+            extend: {
+              rotate: ['peer-aria-expanded'],
+              scale: ['peer-aria-expanded'],
+              maxHeight: ['peer-aria-expanded'],
+              padding: ['peer-aria-expanded'],
+            },
+          },
+        },
+      },
+     
+      plugins: [
+        function ({ addVariant }) {
+          addVariant('aria-expanded', '&[aria-expanded="true"]');
+          addVariant('peer-aria-expanded', ':merge(.peer)[aria-expanded="true"] ~ &');
+        }
+      ],
+    }
+  </script>
+</head>
+<body class="font-sans text-primary-text bg-white leading-normal">
+  
+  <div class="frame max-w-frame mx-auto my-4 px-4 md:my-10 md:px-6">
+    <header class="bg-primary-blue rounded-[10px] shadow-custom flex items-center h-auto md:h-[90px]">
+      <div class="w-full max-w-frame mx-auto flex items-center justify-between flex-col md:flex-row gap-5 p-5 md:px-10">
+        
+        <a class="logo flex items-center gap-[14px]" href="index.html#home" aria-label="HealthSpecialist — на головну">
+          <span class="logo-mark relative w-[34px] h-[34px]" aria-hidden="true">
+            <span class="absolute w-3 h-3 rounded-full bg-light-bg shadow-logo top-0 left-1/2 -translate-x-1/2"></span>
+            <span class="absolute w-3 h-3 rounded-full bg-light-bg shadow-logo top-1/2 left-0 -translate-y-1/2"></span>
+            <span class="absolute w-3 h-3 rounded-full bg-light-bg shadow-logo top-1/2 right-0 -translate-y-1/2"></span>
+            <span class="absolute w-3 h-3 rounded-full bg-light-bg shadow-logo bottom-0 left-1/2 -translate-x-1/2"></span>
+          </span>
+          <span class="logo-text text-light-bg font-bold text-[19px] tracking-[.2px]">Health<em class="font-normal not-italic opacity-95">Specialist</em></span>
+        </a>
+
+        <nav class="nav flex items-center w-full md:w-auto flex-col md:flex-row gap-4 md:gap-70" aria-label="Основне меню">
+          <a href="index.html#home" class="font-medium text-[13px] text-light-bg">HOME</a>
+          <a href="index.html#about" class="font-medium text-[13px] text-light-bg">ABOUT</a>
+          <a href="services.html" class="font-medium text-[13px] text-light-bg font-bold underline underline-offset-4 opacity-100">SERVICES</a>
+          <div class="has-dropdown relative inline-flex items-center w-full md:w-auto">
+            <a href="index.html#doctors" aria-haspopup="true" aria-expanded="false" class="font-medium text-[13px] text-light-bg inline-flex items-center cursor-pointer w-full justify-center md:w-auto">DOCTORS</a>
+            <ul class="dropdown absolute top-full left-0 md:top-[calc(100%+12px)] md:left-1/2 md:-translate-x-1/2 w-full md:w-[180px] m-0 p-0 list-none space-y-2 z-20" role="menu" aria-label="Doctors list" hidden>
+  <li><a href="#doctor-1" role="menuitem" class="block text-[13px] font-semibold text-white bg-[rgba(255,255,255,0.2)] md:bg-primary-blue p-3 rounded-[5px] md:shadow-custom border border-transparent text-center whitespace-nowrap transition-all duration-200 ease-in-out md:hover:bg-white md:hover:text-primary-blue md:hover:border-primary-blue md:hover:-translate-y-px">Phillis K Vance MD</a></li>
+  <li><a href="#doctor-2" role="menuitem" class="block text-[13px] font-semibold text-white bg-[rgba(255,255,255,0.2)] md:bg-primary-blue p-3 rounded-[5px] md:shadow-custom border border-transparent text-center whitespace-nowrap transition-all duration-200 ease-in-out md:hover:bg-white md:hover:text-primary-blue md:hover:border-primary-blue md:hover:-translate-y-px">Stanley K Hudson MD</a></li>
+  <li><a href="#doctor-3" role="menuitem" class="block text-[13px] font-semibold text-white bg-[rgba(255,255,255,0.2)] md:bg-primary-blue p-3 rounded-[5px] md:shadow-custom border border-transparent text-center whitespace-nowrap transition-all duration-200 ease-in-out md:hover:bg-white md:hover:text-primary-blue md:hover:border-primary-blue md:hover:-translate-y-px">Kevin D Malone MD</a></li>
+  <li><a href="#doctor-4" role="menuitem" class="block text-[13px] font-semibold text-white bg-[rgba(255,255,255,0.2)] md:bg-primary-blue p-3 rounded-[5px] md:shadow-custom border border-transparent text-center whitespace-nowrap transition-all duration-200 ease-in-out md:hover:bg-white md:hover:text-primary-blue md:hover:border-primary-blue md:hover:-translate-y-px">Angela S Martin MD</a></li>
+</ul>
+          </div>
+          <a href="index.html#contact" class="font-medium text-[13px] text-light-bg">CONTACT</a>
+        </nav>
+
+        <div class="auth flex items-center w-full md:w-auto flex-col md:flex-row gap-2.5 md:gap-6">
+          <a class="login font-bold text-[15px] text-light-bg w-full md:w-auto text-center" href="#login">LOG IN</a>
+          <button class="inline-flex items-center justify-center gap-2.5 px-4 py-2.5 rounded-[5px] font-bold text-[15px] cursor-pointer border-0 transition-all duration-200 ease-in-out hover:-translate-y-px bg-light-bg text-primary-blue w-full md:w-auto" type="button">SIGN UP</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="services-section mt-14 mb-14" id="services" aria-label="Our Services">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-blue mb-5 text-center">Our Services</h2>
+        
+        <div class="info-cards grid grid-cols-1 gap-6 mt-8">
+          
+          <article class="info-card flex flex-col md:flex-row items-center text-center md:text-left gap-5 md:gap-6 p-5 md:p-6 bg-light-bg rounded-[10px] shadow-custom hover:-translate-y-1 hover:shadow-custom-hover transition-all duration-250 ease-in-out">
+            <img src="/images/FAMILY MEDICINE.jpg" alt="FAMILY MEDICINE" class="service-icon w-full h-[180px] md:w-[160px] md:h-[160px] object-cover flex-shrink-0 rounded-lg">
+            
+            <div class="info-card-content flex flex-col flex-grow self-stretch items-center text-center md:items-start md:text-left"> 
+              <h3 class="text-lg font-bold text-primary-text mb-0 uppercase">FAMILY MEDICINE</h3>
+              <p class="text-sm font-normal leading-[1.55] text-primary-text max-w-full flex-grow mt-1 mb-6">
+                Comprehensive medical care for the whole family, from newborns to seniors. We provide preventive check-ups, vaccinations, routine screenings, and manage acute illnesses. Our team focuses on building long-term relationships to manage chronic diseases like diabetes and hypertension effectively.
+              </p>
+              <button class="inline-flex items-center justify-center gap-2.5 cursor-pointer border-0 transition-all duration-200 ease-in-out hover:-translate-y-px bg-primary-blue text-white self-center md:self-end mt-auto text-[13px] font-bold py-2.5 px-6 rounded-[6px] uppercase w-full max-w-[260px] md:w-auto md:max-w-none">LEARN MORE</button>
+            </div>
+          </article>
+          
+          <article class="info-card flex flex-col md:flex-row items-center text-center md:text-left gap-5 md:gap-6 p-5 md:p-6 bg-light-bg rounded-[10px] shadow-custom hover:-translate-y-1 hover:shadow-custom-hover transition-all duration-250 ease-in-out">
+            <img src="/images/INTERNAL MEDICINE.jpg" alt="INTERNAL MEDICINE" class="service-icon w-full h-[180px] md:w-[160px] md:h-[160px] object-cover flex-shrink-0 rounded-lg">
+            
+            <div class="info-card-content flex flex-col flex-grow self-stretch items-center text-center md:items-start md:text-left">
+              <h3 class="text-lg font-bold text-primary-text mb-0 uppercase">INTERNAL MEDICINE</h3>
+              <p class="text-sm font-normal leading-[1.55] text-primary-text max-w-full flex-grow mt-1 mb-6">
+                In-depth diagnosis and treatment of complex internal organ diseases in adults. Our internists (therapists) specialize in managing multiple chronic conditions simultaneously. We use advanced diagnostic methods to establish accurate diagnoses and develop comprehensive treatment plans for complex adult health issues.
+              </p>
+              <button class="inline-flex items-center justify-center gap-2.5 cursor-pointer border-0 transition-all duration-200 ease-in-out hover:-translate-y-px bg-primary-blue text-white self-center md:self-end mt-auto text-[13px] font-bold py-2.5 px-6 rounded-[6px] uppercase w-full max-w-[260px] md:w-auto md:max-w-none">LEARN MORE</button>
+            </div>
+          </article>
+          
+          <article class="info-card flex flex-col md:flex-row items-center text-center md:text-left gap-5 md:gap-6 p-5 md:p-6 bg-light-bg rounded-[10px] shadow-custom hover:-translate-y-1 hover:shadow-custom-hover transition-all duration-250 ease-in-out">
+            <img src="/images/CARDIOLOGY.jpg" alt="CARDIOLOGY" class="service-icon w-full h-[180px] md:w-[160px] md:h-[160px] object-cover flex-shrink-0 rounded-lg">
+            
+            <div class="info-card-content flex flex-col flex-grow self-stretch items-center text-center md:items-start md:text-left">
+              <h3 class="text-lg font-bold text-primary-text mb-0 uppercase">CARDIOLOGY</h3>
+              <p class="text-sm font-normal leading-[1.55] text-primary-text max-w-full flex-grow mt-1 mb-6">
+                Specialized care for your heart. Diagnosis, treatment, and prevention of cardiovascular diseases. Our services include ECG, stress tests, Holter monitoring, and heart ultrasounds (Echocardiography). We also provide expert lifestyle counseling and management for hypertension and high cholesterol.
+              </p>
+              <button class="inline-flex items-center justify-center gap-2.5 cursor-pointer border-0 transition-all duration-200 ease-in-out hover:-translate-y-px bg-primary-blue text-white self-center md:self-end mt-auto text-[13px] font-bold py-2.5 px-6 rounded-[6px] uppercase w-full max-w-[260px] md:w-auto md:max-w-none">LEARN MORE</button>
+            </div>
+          </article>
+          
+          <article class="info-card flex flex-col md:flex-row items-center text-center md:text-left gap-5 md:gap-6 p-5 md:p-6 bg-light-bg rounded-[10px] shadow-custom hover:-translate-y-1 hover:shadow-custom-hover transition-all duration-250 ease-in-out">
+            <img src="/images/PHYSICAL THERAPY.jpg" alt="PHYSICAL THERAPY" class="service-icon w-full h-[180px] md:w-[160px] md:h-[160px] object-cover flex-shrink-0 rounded-lg">
+            
+            <div class="info-card-content flex flex-col flex-grow self-stretch items-center text-center md:items-start md:text-left">
+              <h3 class="text-lg font-bold text-primary-text mb-0 uppercase">PHYSICAL THERAPY</h3>
+              <p class="text-sm font-normal leading-[1.55] text-primary-text max-w-full flex-grow mt-1 mb-6">
+                Recovery after injuries, surgeries, or neurological events like strokes. We create individual rehabilitation programs including therapeutic exercises, manual therapy, and massage. Our goal is to restore mobility, reduce pain, and help you return to an active, independent life through personalized care.
+              </p>
+              <button class="inline-flex items-center justify-center gap-2.5 cursor-pointer border-0 transition-all duration-200 ease-in-out hover:-translate-y-px bg-primary-blue text-white self-center md:self-end mt-auto text-[13px] font-bold py-2.5 px-6 rounded-[6px] uppercase w-full max-w-[260px] md:w-auto md:max-w-none">LEARN MORE</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+    
+    <section class="faq-section max-w-[900px] my-10 md:my-16 mx-auto px-4" aria-label="Frequently Asked Questions about Services">
+      <h2 class="text-3xl md:text-4xl font-bold text-primary-text mb-6 text-center">Frequently Asked Questions</h2>
+      <div class="faq-container grid gap-4">
+        
+        <div class="faq-item bg-light-bg rounded-[10px] shadow-custom border border-transparent transition-all duration-200 ease-in-out hover:border-primary-blue">
+          <button class="faq-question flex justify-between items-center w-full p-5 md:px-6 bg-none border-none cursor-pointer font-sans text-base md:text-lg font-semibold text-primary-text text-left peer aria-expanded:text-primary-blue" aria-expanded="false" aria-controls="faq1-answer-en">
+            <span>What is the difference between Family and Internal Medicine?</span>
+            <span class="faq-icon relative w-4 h-4 flex-shrink-0 ml-5" aria-hidden="true">
+              <span class="absolute top-1/2 left-1/2 w-4 h-0.5 bg-primary-blue rounded-full -translate-x-1/2 -translate-y-1/2 transition-transform duration-200 ease-in-out"></span>
+              <span class="absolute top-1/2 left-1/2 w-4 h-0.5 bg-primary-blue rounded-full -translate-x-1/2 -translate-y-1/2 transition-transform duration-200 ease-in-out rotate-90 peer-aria-expanded:rotate-0 peer-aria-expanded:scale-x-0"></span>
+            </span>
+          </button>
+          <div id="faq1-answer-en" class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-out peer-aria-expanded:max-h-[300px] peer-aria-expanded:pb-5 px-6 text-sm md:text-[15px] leading-relaxed">
+            <p class="pt-0">
+              Family Medicine provides care for patients of all ages, from infants to the elderly. Internal Medicine (internists) focuses exclusively on adults (18+) and often specializes in diagnosing and managing complex medical conditions and chronic diseases in adult patients.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-light-bg rounded-[10px] shadow-custom border border-transparent transition-all duration-200 ease-in-out hover:border-primary-blue">
+          <button class="faq-question flex justify-between items-center w-full p-5 md:px-6 bg-none border-none cursor-pointer font-sans text-base md:text-lg font-semibold text-primary-text text-left peer aria-expanded:text-primary-blue" aria-expanded="false" aria-controls="faq2-answer-en">
+            <span>Do I need a referral to see a cardiologist?</span>
+            <span class="faq-icon relative w-4 h-4 flex-shrink-0 ml-5" aria-hidden="true">
+              <span class="absolute top-1/2 left-1/2 w-4 h-0.5 bg-primary-blue rounded-full -translate-x-1/2 -translate-y-1/2 transition-transform duration-200 ease-in-out"></span>
+              <span class="absolute top-1/2 left-1/2 w-4 h-0.5 bg-primary-blue rounded-full -translate-x-1/2 -translate-y-1/2 transition-transform duration-200 ease-in-out rotate-90 peer-aria-expanded:rotate-0 peer-aria-expanded:scale-x-0"></span>
+            </span>
+          </button>
+          <div id="faq2-answer-en" class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-out peer-aria-expanded:max-h-[300px] peer-aria-expanded:pb-5 px-6 text-sm md:text-[15px] leading-relaxed">
+            <p class="pt-0">
+              While many insurance plans require a referral from your primary care physician to see a specialist like a cardiologist, we also accept self-referrals. We recommend calling our office first to verify your insurance coverage and schedule a consultation.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-light-bg rounded-[10px] shadow-custom border border-transparent transition-all duration-200 ease-in-out hover:border-primary-blue">
+          <button class="faq-question flex justify-between items-center w-full p-5 md:px-6 bg-none border-none cursor-pointer font-sans text-base md:text-lg font-semibold text-primary-text text-left peer aria-expanded:text-primary-blue" aria-expanded="false" aria-controls="faq3-answer-en">
+            <span>What does a Physical Therapy session involve?</span>
+            <span class="faq-icon relative w-4 h-4 flex-shrink-0 ml-5" aria-hidden="true">
+              <span class="absolute top-1/2 left-1/2 w-4 h-0.5 bg-primary-blue rounded-full -translate-x-1/2 -translate-y-1/2 transition-transform duration-200 ease-in-out"></span>
+              <span class="absolute top-1/2 left-1/2 w-4 h-0.5 bg-primary-blue rounded-full -translate-x-1/2 -translate-y-1/2 transition-transform duration-200 ease-in-out rotate-90 peer-aria-expanded:rotate-0 peer-aria-expanded:scale-x-0"></span>
+            </span>
+          </button>
+          <div id="faq3-answer-en" class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out peer-aria-expanded:max-h-[300px] peer-aria-expanded:pb-5 px-6 text-sm md:text-[15px] leading-relaxed">
+            <p class="pt-0">
+              Your first session involves a comprehensive assessment of your condition, pain level, and mobility. Based on this, your therapist will create a personalized treatment plan. Subsequent sessions typically include a combination of guided therapeutic exercises, manual (hands-on) therapy, and education on exercises you can do at home.
+            </p> </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <footer class="site-footer mt-16 bg-light-bg rounded-[10px]" aria-label="Footer" id="contact">
+      <div class="site-footer__inner max-w-frame mx-auto grid grid-cols-1 md:grid-cols-[280px_1fr] items-start gap-8 md:gap-6 p-8 md:p-8 md:px-10">
+        
+        <a class="logo footer-logo flex items-center gap-[14px] mx-auto md:mx-0" href="index.html#home" aria-label="HealthSpecialist — to top">
+          <span class="logo-mark relative w-[34px] h-[34px]" aria-hidden="true">
+            <span class="absolute w-3 h-3 rounded-full bg-primary-blue shadow-logo top-0 left-1/2 -translate-x-1/2"></span>
+            <span class="absolute w-3 h-3 rounded-full bg-primary-blue shadow-logo top-1/2 left-0 -translate-y-1/2"></span>
+            <span class="absolute w-3 h-3 rounded-full bg-primary-blue shadow-logo top-1/2 right-0 -translate-y-1/2"></span>
+            <span class="absolute w-3 h-3 rounded-full bg-primary-blue shadow-logo bottom-0 left-1/2 -translate-x-1/2"></span>
+          </span>
+          <span class="logo-text text-primary-blue font-bold text-[19px] tracking-[.2px]">Health<em class="font-normal not-italic opacity-95">Specialist</em></span>
+        </a>
+
+        <div class="footer-cols grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 items-start text-center md:text-left">
+          <div class="footer-col">
+            <h4 class="mt-0 mb-3 md:mb-4 text-[13px] font-bold text-primary-text">SERVICES</h4>
+            <a href="services.html" class="block text-[10px] font-medium text-primary-text mb-2 md:mb-3 text-center md:text-left">Family Medicine</a>
+            <a href="services.html" class="block text-[10px] font-medium text-primary-text mb-2 md:mb-3 text-center md:text-left">Internal Medicine</a>
+            <a href="services.html" class="block text-[10px] font-medium text-primary-text mb-2 md:mb-3 text-center md:text-left">Cardiology</a>
+            <a href="services.html" class="block text-[10px] font-medium text-primary-text mb-2 md:mb-3 text-center md:text-left">Physical Therapy</a>
+          </div>
+          <div class="footer-col">
+            <h4 class="mt-0 mb-3 md:mb-4 text-[13px] font-bold text-primary-text">DOCTORS</h4>
+            <a href="index.html#doctor-1" class="block text-[10px] font-medium text-primary-text mb-2 md:mb-3 text-center md:text-left">Phillis K Vance MD</a>
+            <a href="index.html#doctor-2" class="block text-[10px] font-medium text-primary-text mb-2 md:mb-3 text-center md:text-left">Stanley K Hudson MD</a>
+            <a href="index.html#doctor-3" class="block text-[10px] font-medium text-primary-text mb-2 md:mb-3 text-center md:text-left">Kevin D Malone MD</a>
+            <a href="index.html#doctor-4" class="block text-[10px] font-medium text-primary-text mb-2 md:mb-3 text-center md:text-left">Angela S Martin MD</a>
+          </div>
+          <div class="footer-col contact-col flex flex-col items-center md:items-start">
+            <h4 class="mt-0 mb-3 md:mb-4 text-[13px] font-bold text-primary-text">CONTACT</h4>
+            <a href="tel:+14041234567" class="phone-cta inline-flex items-center justify-center gap-3 h-14 px-7 w-full md:w-auto my-0 bg-primary-blue text-white font-bold text-[15px] rounded-lg shadow-custom transition-all duration-200 ease-in-out hover:bg-primary-blue-hover hover:-translate-y-px max-w-[300px] md:max-w-none">
+              <span class="phone-cta__icon" aria-hidden="true">
+                <img src="/images/mobile.png" alt="" width="20" height="20" class="w-[22px] h-[22px] block object-contain brightness-0 invert">
+              </span>
+              (404)123 - 4567
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script>
+  
+    document.querySelectorAll('.has-dropdown').forEach(w => {
+      const link = w.querySelector('a');
+      const menu = w.querySelector('.dropdown');
+      if (!link || !menu) return;
+
+      if (link.getAttribute('href') !== 'index.html#doctors') {
+        link.addEventListener('click', (e) => {
+          e.preventDefault(); 
+          const willOpen = menu.hidden !== false;
+          document.querySelectorAll('.has-dropdown .dropdown').forEach(m => m.hidden = true);
+          menu.hidden = !willOpen ? true : false;
+        });
+      }
+
+      document.addEventListener('click', (e) => {
+        if (!w.contains(e.target)) menu.hidden = true;
+      });
+    });
+  
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !isExpanded);
+      });
+    });
+  </script>
+</body>
+</html>
